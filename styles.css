@@ -84,7 +84,7 @@ div#search button:hover {
     font-weight: bold;
 }
 
-#nav select:hover, button:hover {
+#nav select:hover, #nav button:hover {
     color: #F6AB1E;
     cursor: pointer;
 }
@@ -104,13 +104,92 @@ div#search button:hover {
     font-size: 110%
 }
 
-header.category--header_b {
+section.category {
+    margin: 0 auto;
+    width: 88%;
+    border-radius: 10px;
+}
+
+.category--header_blue {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px 7px 0 0;
     background-color: #6AC1D5;
-    border: 2px solid maroon;
+    padding: 0px 10px;
+}
+
+.category--header_white {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px 7px 0 0;
+    background-color: #FFF;
     padding: 0px 16px;
 }
 
-section.category--products {
-    display: flex;
+.category--header_blue h2 {
+    padding: 0.88rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #313133;
 }
+
+.category--header_white h2 {
+    padding: 0.88rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #313133;
+}
+
+.category--header_blue button {
+    padding: 1rem;
+    border: none;
+    background: transparent;
+    color: #313133;
+    font-weight: 700;
+    font-size: 100%;
+    cursor: pointer;
+}
+
+.category--products {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 0 0 7px 7px;
+    padding: 0.5rem 0;
+    margin-bottom: 1.25rem;
+}
+
+.card {
+    width: 16%;
+    height: 100%;
+    margin: 0 0.25rem;
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0.025rem 0 0.025rem;
+}
+
+.main--price {
+    font-weight: bold;
+    font-size: 110%;
+    color: #313133;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
